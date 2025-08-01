@@ -1,0 +1,23 @@
+from tkinter import *
+import tkinter as tk
+root=tk.Tk()
+"""root.geometry('500x500')
+root.minsize(500,500)"""
+w=Label(root,text="WELCOME TO ELECTRONICS WHOLESALE",font=("Arial",30,"bold"),fg="blue",bg="grey",width=40,height=2)
+w.grid(row=0,column=0)
+l1=Label(text='PRODUCT NAME',font=("Arial",20,"bold"),fg="red",bg="silver",width=40,height=2)
+l1.grid(row=1,column=0)
+l2=Label(text='COMPANY NAME',font=("Arial",20,"bold"),fg="red",bg="silver",width=40,height=2)
+l2.grid(row=2,column=0)
+l3=Label(text='QUANTITY',font=("Arial",20,"bold"),fg="red",bg="silver",width=40,height=2)
+l3.grid(row=3,column=0)
+e1=Entry(width=50,borderwidth=5,relief=GROOVE)
+e1.grid(row=1,column=1)
+e2=Entry(width=50,borderwidth=5,relief=GROOVE)
+e2.grid(row=2,column=1)
+e3=Entry(width=50,borderwidth=5,relief=GROOVE)
+e3.grid(row=3,column=1)
+root.title('ELECRONICS WHOLESALE')
+button = tk.Button(root, text='Submit',width=12,fg="white",bg="blue",font=("Arial",14,"bold"))
+button.grid(row=4,column=1)
+root.mainloop()
